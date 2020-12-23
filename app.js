@@ -19,10 +19,10 @@ var url = "https://api.funtranslations.com/translate/minion.json"
 
 
 function buttonClickHandler(event) {
-    console.log("button clicked");
+    
     var input = translateInput.value;
     var finalURL = constructURL(input);
-    console.log(finalURL);
+    
     fetch(finalURL)
         .then(response => response.json())
         .then(json => {
